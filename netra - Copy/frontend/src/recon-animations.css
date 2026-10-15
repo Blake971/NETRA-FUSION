@@ -1,0 +1,190 @@
+.recon-network {
+  position: relative;
+  width: min(540px, 100%);
+  margin: 0 auto 24px;
+  padding: 10px 0 0;
+  color: var(--mint);
+}
+
+.recon-network svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.recon-link {
+  fill: none;
+  stroke: var(--mint);
+  stroke-dasharray: 3 13;
+  stroke-linecap: round;
+  stroke-opacity: .42;
+  stroke-width: 1.5;
+  animation: recon-flow 5s linear infinite;
+}
+
+.recon-link-secondary {
+  stroke-dasharray: 1 18;
+  stroke-opacity: .2;
+  animation-duration: 8s;
+  animation-direction: reverse;
+}
+
+.recon-node {
+  animation: recon-node-breathe 3.2s ease-in-out var(--node-delay) infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.recon-node circle:first-child {
+  fill: var(--mint);
+  filter: drop-shadow(0 0 5px color-mix(in srgb, var(--mint) 70%, transparent));
+}
+
+.recon-node-ring {
+  fill: none;
+  stroke: var(--mint);
+  stroke-opacity: .45;
+  stroke-width: 1;
+}
+
+.recon-core {
+  fill: var(--panel);
+  stroke: var(--mint);
+  stroke-width: 1.5;
+  filter: drop-shadow(0 0 11px color-mix(in srgb, var(--mint) 35%, transparent));
+  animation: recon-core-pulse 3s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.recon-core-dot {
+  fill: var(--mint);
+}
+
+.recon-label {
+  display: block;
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: 1.8px;
+  text-align: center;
+}
+
+.progress progress {
+  accent-color: var(--mint);
+}
+
+.search-mode-select {
+  flex: 0 0 auto;
+  max-width: 180px;
+  background: transparent;
+  color: var(--text);
+  border: 0;
+  padding: 8px 4px;
+}
+
+.search-mode-select option {
+  background: var(--panel);
+  color: var(--text);
+}
+
+.dork-generated-links {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.dork-generated-links a {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2px 8px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.dork-generated-links a small {
+  grid-column: 1 / -1;
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.history-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 12px;
+}
+
+.email-consent {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 10px 2px 14px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.email-result {
+  margin-bottom: 16px;
+}
+
+.email-breach {
+  display: grid;
+  gap: 4px;
+  padding: 12px 0;
+  border-top: 1px solid var(--border);
+}
+
+.email-breach span,
+.email-breach small {
+  color: var(--muted);
+}
+
+.danger-action {
+  border-color: #8f4c4c;
+  color: #ffb0a8;
+}
+
+.fusion.dork-view .content > section.panel:not(.generated-query-panel) {
+  display: none;
+}
+
+.fusion.dork-view .content > .asset-graph-view,
+.fusion.dork-view .content > .dashboard-grid {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  .search-mode-select {
+    flex-basis: 100%;
+    max-width: none;
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+@keyframes recon-flow {
+  to { stroke-dashoffset: -64; }
+}
+
+@keyframes recon-node-breathe {
+  0%, 100% { opacity: .55; transform: scale(.92); }
+  50% { opacity: 1; transform: scale(1.08); }
+}
+
+@keyframes recon-core-pulse {
+  0%, 100% { opacity: .75; transform: scale(.96); }
+  50% { opacity: 1; transform: scale(1.06); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .recon-link,
+  .recon-node,
+  .recon-core {
+    animation: none;
+  }
+
+  .recon-node,
+  .recon-core {
+    opacity: 1;
+    transform: none;
+  }
+}

@@ -1,0 +1,7 @@
+import React, {useState} from 'react'
+
+export default function History({history, open}) {
+  const [query, setQuery] = useState('')
+  const rows = history.filter(h => h.domain.toLowerCase().includes(query.toLowerCase()))
+  return <section className="panel simple-history"><div className="panel-head"><h2>Your saved website checkups</h2><span>{history.length} saved</span></div><input aria-label="Find a past website checkup" placeholder="Find a website in your history…" value={query} onChange={e => setQuery(e.target.value)}/><div className="table-scroll"><table><thead><tr><th>Website</th><th>When it was checked</th><th>Result</th><th>Score · higher is better</th><th>Checks observed</th></tr></thead><tbody>{rows.map(h => <tr key={h.id}><td><button className="text-button" onClick={() => open(h.id)}>{h.domain} ↗</button><div className="history-mode">{h.demo ? 'Fictional example' : 'Real website'}</div></td><td>{new Date(h.created_at).toLocaleString()}</td><td>{({QUEUED:'Waiting to start',RUNNING:'Checking…',COMPLETED:'Ready to view',FAILED:'Could not complete'})[h.status] || h.status}</td><td>{h.score == null ? 'Not available' : h.score + '/100'}</td><td>{h.coverage == null ? 'Not available' : h.coverage + '%'}</td></tr>)}</tbody></table></div>{!rows.length && <p className="empty">{query ? 'No saved checkups match that website.' : 'Your checkups will be saved here. Start with a website or try the example.'}</p>}</section>
+}

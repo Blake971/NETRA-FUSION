@@ -1,0 +1,9 @@
+.runtime/
+.venv/
+**/__pycache__/
+**/node_modules/
+**/venv/
+**/.env
+**/fusion.db
+test-results/
+**/backups/

@@ -1,0 +1,1 @@
+.ai-panel{padding:22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;margin-top:20px}.ai-panel>div:first-child{flex:1;min-width:220px}.ai-panel p{font-size:11px}.ai-output{width:100%;border-top:1px solid var(--border);padding-top:18px}.ai-output p{white-space:pre-wrap}.ai-output small{color:var(--mint);font-size:10px}

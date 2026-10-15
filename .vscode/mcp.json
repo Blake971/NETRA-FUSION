@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "hibp": {
+      "type": "http",
+      "url": "https://haveibeenpwned.com/mcp"
+    }
+  }
+}

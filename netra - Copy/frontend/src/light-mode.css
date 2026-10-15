@@ -1,0 +1,645 @@
+/* Light mode overrides for NETRA Fusion - Enhanced */
+.fusion.light {
+  --bg: #f8fafc;
+  --panel: #ffffff;
+  --border: #e2e8f0;
+  --text: #1e293b;
+  --muted: #64748b;
+  --mint: #0d9488;
+  --panel-hover: #f1f5f9;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px rgba(0,0,0,0.07);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.fusion.light .sidebar {
+  background: #ffffff;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+}
+
+.fusion.light .brand {
+  color: #1e293b;
+}
+
+.fusion.light .version {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+.fusion.light .workspace-label {
+  color: #94a3b8;
+}
+
+.fusion.light .nav {
+  color: #64748b;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+}
+
+.fusion.light .nav:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+  transform: translateX(2px);
+}
+
+.fusion.light .nav.active {
+  color: #0d9488;
+  background: #f0fdfa;
+  box-shadow: 0 2px 4px rgba(13,148,136,0.1);
+  font-weight: 600;
+}
+
+.fusion.light .nav b {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+.fusion.light .live-dot {
+  box-shadow: 0 0 8px #0d948844;
+}
+
+.fusion.light main {
+  background: #f8fafc;
+}
+
+.fusion.light .panel {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  box-shadow: var(--shadow-sm);
+  border-radius: 12px;
+}
+
+.fusion.light .topbar {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  box-shadow: var(--shadow-sm);
+}
+
+.fusion.light .heading h1 {
+  color: #1e293b;
+}
+
+.fusion.light .heading p {
+  color: #64748b;
+}
+
+.fusion.light .metric {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  box-shadow: var(--shadow-sm);
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.fusion.light .metric:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.fusion.light .metric strong {
+  color: #1e293b;
+}
+
+.fusion.light .finding {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  box-shadow: var(--shadow-sm);
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+.fusion.light .finding:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.fusion.light .finding h2 {
+  color: #1e293b;
+}
+
+.fusion.light .finding p {
+  color: #64748b;
+}
+
+.fusion.light .finding blockquote {
+  background: #f1f5f9;
+  border-color: #e2e8f0;
+  color: #475569;
+  border-radius: 8px;
+}
+
+.fusion.light .toolbar input,
+.fusion.light .toolbar select {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  color: #1e293b;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+.fusion.light .toolbar input:focus,
+.fusion.light .toolbar select:focus {
+  border-color: #0d9488;
+  box-shadow: 0 0 0 3px rgba(13,148,136,0.1);
+}
+
+.fusion.light .scan-bar input {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  color: #1e293b;
+  box-shadow: var(--shadow-sm);
+}
+
+.fusion.light .scan-bar input:focus {
+  border-color: #0d9488;
+  box-shadow: 0 0 0 3px rgba(13,148,136,0.1);
+}
+
+.fusion.light .scan-bar input::placeholder {
+  color: #94a3b8;
+}
+
+.fusion.light .primary {
+  background: #0d9488;
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(13,148,136,0.2);
+  transition: all 0.2s ease;
+}
+
+.fusion.light .primary:hover:not(:disabled) {
+  background: #0f766e;
+  box-shadow: 0 4px 6px rgba(13,148,136,0.3);
+  transform: translateY(-1px);
+}
+
+.fusion.light .secondary {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  color: #1e293b;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+.fusion.light .secondary:hover:not(:disabled) {
+  background: #f1f5f9;
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.fusion.light footer {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  color: #64748b;
+}
+
+.fusion.light .error {
+  background: #fef2f2;
+  border-color: #fecaca;
+  color: #dc2626;
+  border-radius: 8px;
+}
+
+.fusion.light .progress {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  border-radius: 12px;
+}
+
+.fusion.light .progress progress {
+  background: #e2e8f0;
+  border-radius: 8px;
+}
+
+.fusion.light .progress progress::-webkit-progress-bar {
+  background: #e2e8f0;
+  border-radius: 8px;
+}
+
+.fusion.light .progress progress::-webkit-progress-value {
+  background: #0d9488;
+  border-radius: 8px;
+}
+
+.fusion.light .graph-wrap svg circle {
+  stroke: #e2e8f0;
+}
+
+.fusion.light .graph-wrap svg text {
+  fill: #64748b;
+}
+
+.fusion.light .asset-list > div {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.fusion.light .asset-list > div:hover {
+  background: #f1f5f9;
+}
+
+.fusion.light .asset-list strong {
+  color: #1e293b;
+}
+
+.fusion.light .asset-list small {
+  color: #94a3b8;
+}
+
+.fusion.light .categories > div {
+  background: #ffffff;
+}
+
+.fusion.light .categories > div strong {
+  color: #1e293b;
+}
+
+.fusion.light .categories > div span {
+  color: #64748b;
+}
+
+.fusion.light .trail > div {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  border-radius: 8px;
+}
+
+.fusion.light .trail > div strong {
+  color: #1e293b;
+}
+
+.fusion.light .trail > div p {
+  color: #64748b;
+}
+
+.fusion.light .briefing {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  border-radius: 12px;
+}
+
+.fusion.light .briefing p {
+  color: #64748b;
+}
+
+.fusion.light .priority-item {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  box-shadow: var(--shadow-sm);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.fusion.light .priority-item:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateX(4px);
+}
+
+.fusion.light .priority-item strong {
+  color: #1e293b;
+}
+
+.fusion.light .priority-item small {
+  color: #94a3b8;
+}
+
+.fusion.light .simulator {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  border-radius: 12px;
+}
+
+.fusion.light .simulator h2 {
+  color: #1e293b;
+}
+
+.fusion.light .simulator p {
+  color: #64748b;
+}
+
+.fusion.light .simulator strong {
+  color: #1e293b;
+}
+
+.fusion.light .fix-title h2 {
+  color: #1e293b;
+}
+
+.fusion.light .fix-title pre {
+  background: #f1f5f9;
+  border-color: #e2e8f0;
+  color: #475569;
+  border-radius: 8px;
+}
+
+.fusion.light .ai-panel {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  border-radius: 12px;
+}
+
+.fusion.light .ai-panel h2 {
+  color: #1e293b;
+}
+
+.fusion.light .ai-panel p {
+  color: #64748b;
+}
+
+.fusion.light .ai-output {
+  background: #f1f5f9;
+  border-color: #e2e8f0;
+  color: #475569;
+  border-radius: 8px;
+}
+
+.fusion.light .ai-output small {
+  color: #94a3b8;
+}
+
+.fusion.light .ai-output p {
+  color: #1e293b;
+}
+
+.fusion.light .empty {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  color: #64748b;
+  border-radius: 12px;
+}
+
+.fusion.light .welcome {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  border-radius: 12px;
+}
+
+.fusion.light .welcome h2 {
+  color: #1e293b;
+}
+
+.fusion.light .welcome p {
+  color: #64748b;
+}
+
+.fusion.light .welcome-features span {
+  background: #f1f5f9;
+  color: #64748b;
+  border-radius: 8px;
+}
+
+.fusion.light .table-scroll table {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.fusion.light .table-scroll th {
+  background: #f1f5f9;
+  color: #64748b;
+  border-color: #e2e8f0;
+}
+
+.fusion.light .table-scroll td {
+  border-color: #e2e8f0;
+  color: #1e293b;
+}
+
+.fusion.light .table-scroll tr:hover {
+  background: #f8fafc;
+}
+
+.fusion.light .panel-head {
+  background: #ffffff;
+  border-color: #e2e8f0;
+}
+
+.fusion.light .panel-head h2 {
+  color: #1e293b;
+}
+
+.fusion.light .panel-head span {
+  color: #64748b;
+}
+
+.fusion.light .divider {
+  border-color: #e2e8f0;
+}
+
+.fusion.light .eyebrow {
+  color: #94a3b8;
+}
+
+.fusion.light .method {
+  color: #64748b;
+}
+
+.fusion.light .briefing-footer {
+  color: #94a3b8;
+}
+
+.fusion.light .digest {
+  color: #64748b;
+}
+
+.fusion.light .raw pre {
+  background: #f1f5f9;
+  border-color: #e2e8f0;
+  color: #475569;
+  border-radius: 8px;
+}
+
+.fusion.light .severity.high {
+  background: #fef2f2;
+  color: #dc2626;
+  border-radius: 6px;
+}
+
+.fusion.light .severity.medium {
+  background: #fffbeb;
+  color: #d97706;
+  border-radius: 6px;
+}
+
+.fusion.light .severity.low {
+  background: #f0fdf4;
+  color: #16a34a;
+  border-radius: 6px;
+}
+
+.fusion.light .muted {
+  color: #94a3b8;
+}
+
+.fusion.light .mint {
+  color: #0d9488;
+}
+
+.fusion.light .amber {
+  color: #d97706;
+}
+
+.fusion.light .tiny-badge {
+  background: #f1f5f9;
+  color: #64748b;
+  border-radius: 6px;
+}
+
+.fusion.light .local-badge {
+  background: #f0fdfa;
+  color: #0d9488;
+  border-color: #bbf7d0;
+  border-radius: 6px;
+}
+
+.fusion.light .demo-badge {
+  background: #fef3c7;
+  color: #92400e;
+  border-color: #fde68a;
+  border-radius: 6px;
+}
+
+.fusion.light .case-id {
+  color: #94a3b8;
+}
+
+.fusion.light .slash {
+  color: #94a3b8;
+}
+
+.fusion.light .text-button {
+  color: #0d9488;
+  transition: all 0.2s ease;
+}
+
+.fusion.light .text-button:hover {
+  color: #0f766e;
+}
+
+.fusion.light .icon-button {
+  color: #64748b;
+  transition: all 0.2s ease;
+}
+
+.fusion.light .icon-button:hover {
+  color: #1e293b;
+  transform: rotate(45deg);
+}
+
+.fusion.light .selected {
+  background: #e0f2fe;
+  color: #0284c7;
+  border-radius: 6px;
+}
+
+.fusion.light .bar {
+  background: #e2e8f0;
+  border-radius: 4px;
+}
+
+.fusion.light .bar i {
+  background: #0d9488;
+  border-radius: 4px;
+}
+
+.fusion.light .radar {
+  background: #f1f5f9;
+  border-color: #e2e8f0;
+  border-radius: 50%;
+}
+
+.fusion.light .radar span {
+  color: #0d9488;
+}
+
+/* Enhanced Light Mode - New Components */
+.fusion.light .dork-item {
+  background: #f8fafc;
+  border-color: #e2e8f0;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+.fusion.light .dork-item:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.fusion.light .dork-item code {
+  background: #f1f5f9;
+  color: #0d9488;
+  border-radius: 6px;
+}
+
+.fusion.light .dork-category h3 {
+  color: #0d9488;
+}
+
+.fusion.light .dork-disclaimer {
+  background: #fef3c7;
+  border-left-color: #d97706;
+  border-radius: 8px;
+}
+
+.fusion.light .geo-card {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+.fusion.light .geo-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.fusion.light .geo-header {
+  border-color: #e2e8f0;
+}
+
+.fusion.light .geo-header strong {
+  color: #0d9488;
+}
+
+.fusion.light .source-badge {
+  background: #e0f2fe;
+  color: #0284c7;
+  border-radius: 6px;
+}
+
+.fusion.light .geo-location {
+  color: #1e293b;
+}
+
+.fusion.light .geo-details label {
+  color: #94a3b8;
+}
+
+.fusion.light .geo-details span {
+  color: #1e293b;
+}
+
+.fusion.light .dork-search-mode {
+  background: #f1f5f9;
+  border-color: #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.fusion.light .dork-search-mode label {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.fusion.light .dork-search-mode select,
+.fusion.light .dork-search-mode input {
+  flex: 1;
+  min-width: 200px;
+}
